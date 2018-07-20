@@ -93,11 +93,12 @@ introduce_list = [
 i = 0
 for line in introduce_list:
     print(line)
-    time.sleep(1)
+    time.sleep(1.5)
     i += 1
     if i > 6:
         break
 dee()
+time.sleep(2)
 writefrange1()
 # writefrang()
 time.sleep(1)
@@ -106,7 +107,7 @@ for j in range(7, len(introduce_list)):
     print(''.join((introduce_list[j:j+1])))
     # dee()
     print()
-    time.sleep(1)
+    time.sleep(1.5)
 
 writefrang()
 n = input("输入任意关闭此窗口：")
