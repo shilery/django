@@ -65,21 +65,48 @@ def start():
 def dee():
     print("-" * 80)
 
+introduce_list = [
+    "陈嘻嘻！！！！！",
+    "首先很高心认识你",
+    "很高兴能在深圳这个年轻的城市认识你",
+    "这座城市具有活力与包容 能相对公平的得到你付出的相应回报",
+    "我热爱这座城市 热爱现在的生活 欣赏我遇到的人",
+    "不慕大富贵，但求小清新",
+    "我相信 无论生活多艰难 我们最终还是会珍爱生活 珍爱每一个新来的早晨 并且对未来的日子充满信心和希冀",
+    "送你一首诗：",
+    "  《热爱生命》 汪国真",
+    "我不去想是否能够成功",
+    "既然选择了远方",
+    "便只顾风雨兼程",
 
-myfile = open("word.txt", "r+")
-line = myfile.readlines()
-for i in range(0, 7):
-    print(line[i])
+    "我不去想能否赢得爱情",
+    "既然钟情于玫瑰",
+    "就勇敢地吐露真诚",
+    "我不去想身后会不会袭来寒风冷雨",
+    "既然目标是地平线",
+    "留给世界的只能是背影",
+    "我不去想未来是平坦还是泥泞",
+    "只要热爱生命",
+    "一切，都在意料之中"
+]
+
+i = 0
+for line in introduce_list:
+    print(line)
     time.sleep(1)
+    i += 1
+    if i > 6:
+        break
 dee()
 writefrange1()
 # writefrang()
+time.sleep(1)
 dee()
-for i in range(7, 24):
-    print(line[i])
-    dee()
-    i += 2
-    time.sleep(2)
-# myfile.close()
-# writefrang()
+for j in range(7, len(introduce_list)):
+    print(''.join((introduce_list[j:j+1])))
+    # dee()
+    print()
+    time.sleep(1)
+
+writefrang()
 n = input("输入任意关闭此窗口：")
